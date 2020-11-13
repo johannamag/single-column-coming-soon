@@ -18,3 +18,166 @@ body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 20px;
 }
+
+section {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  max-width: 1050px;
+  height: 100%;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-weight: 300;
+  color: var(--gray);
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-weight: 600;
+  color: #000;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.form {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.email {
+  padding: 10px 20px;
+  border: 0.8px solid var(--lightblue);
+  opacity: 0.7;
+  border-radius: 20px;
+  max-width: 250px;
+  margin-right: 10px;
+  outline: none;
+  box-shadow: -8px 8px 15px 0px hsla(240, 18%, 77%, 0.52);
+}
+
+::placeholder {
+  color: var(--lightblue);
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+:-ms-input-placeholder {
+  color: var(--lightblue);
+  font-weight: 300;
+}
+
+::-ms-input-placeholder {
+  color: var(--lightblue);
+  font-weight: 300;
+}
+
+.errormsg {
+  color: var(--red);
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.7rem;
+  margin-top: 5px;
+  opacity: 0;
+}
+
+.email.error {
+  border-color: var(--red);
+}
+
+.btn {
+  padding: 10px 20px;
+  max-width: 140px;
+  background-color: var(--blue);
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid var(--blue);
+  font-size: 0.8rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: -8px 8px 15px 0px hsla(240, 18%, 77%, 0.52);
+}
+
+.btn:hover {
+  background-color: var(--darkblue);
+}
+
+.hero {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer {
+  margin-top: 30px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  border: 1px solid var(--lightblue);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.icon:last-child {
+  margin-right: 0;
+}
+
+.fab {
+  color: var(--blue);
+}
+
+.copy {
+  font-size: 0.7rem;
+  color: var(--gray);
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 420px) {
+  .form {
+    flex-direction: column;
+  }
+  .email {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .btn {
+    width: 100%;
+    padding-left: initial;
+    padding-right: initial;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
