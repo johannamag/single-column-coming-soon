@@ -20,8 +20,48 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    We are launching soon! Subscribe and get notified Notify Me &copy; Copyright
-    Ping. All rights reserved.
+    <section>
+      <div class="container">
+        <img src="./media/logo.svg" alt="logo" class="logo" />
+        <h1>We are launching <span class="bold">soon!</span></h1>
+        <h3>Subscribe and get notified</h3>
+        <form class="form" id="form">
+          <div class="form-control">
+            <input
+              type="text"
+              class="email"
+              id="email"
+              placeholder="Your email address..."
+            />
+            <p class="errormsg">Please provide a valid email address</p>
+          </div>
+          <div class="form-control">
+            <input type="submit" class="btn" id="btn" value="Notify Me" />
+          </div>
+        </form>
+        <img src="./media/illustration-dashboard.png" alt="hero" class="hero" />
+        <div class="footer">
+          <ul class="socials">
+            <li class="icon">
+              <a href="#" class="link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="icon">
+              <a href="#" class="link">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="icon">
+              <a href="#" class="link">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="copy">&copy; Copyright Ping. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
 
     <script src="index.js"></script>
   </body>
